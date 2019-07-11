@@ -1,4 +1,9 @@
 .cardstyle {
     border: 0.25rem solid white;
     border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+.cardstyle:hover {
+    border: 0.5rem solid white;
 }

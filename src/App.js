@@ -19,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <img alt="cool" src={require('./images/sonic.png')}/>
         {this.state.cards.map(card => (
           <Card
             id={card.id}
