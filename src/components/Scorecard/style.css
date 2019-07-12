@@ -1,0 +1,9 @@
+.scorecard {
+    background-color: rgb(0, 141, 223);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 6rem;
+    color: white;
+    font-size: x-large;
+}

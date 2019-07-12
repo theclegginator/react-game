@@ -1,9 +1,16 @@
 .cardstyle {
-    border: 0.25rem solid white;
+    border: 0.25rem solid rgb(148, 148, 148);
     border-radius: 10px;
     height: 150px;
     width: 150px;
 }
 .cardstyle:hover {
-    border: 0.5rem solid white;
+    border-color: rgb(0, 154, 226);
+    transition: .5s all;
+    transform: scale(1.2);
 }
+
+.cardstyle:active {
+    transform: scale(1);
+    transition: .2s all;
+  }
