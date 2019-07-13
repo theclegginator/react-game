@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-game/static/css/main.d7de1028.chunk.css",
+    "main.js": "/react-game/static/js/main.03e81510.chunk.js",
+    "main.js.map": "/react-game/static/js/main.03e81510.chunk.js.map",
+    "runtime~main.js": "/react-game/static/js/runtime~main.ef933c85.js",
+    "runtime~main.js.map": "/react-game/static/js/runtime~main.ef933c85.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/react-game/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/react-game/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/react-game/index.html",
+    "precache-manifest.61d8b0a231e6e129c369e5e972046078.js": "/react-game/precache-manifest.61d8b0a231e6e129c369e5e972046078.js",
+    "service-worker.js": "/react-game/service-worker.js",
+    "static/css/main.d7de1028.chunk.css.map": "/react-game/static/css/main.d7de1028.chunk.css.map",
+    "static/media/bowser.png": "/react-game/static/media/bowser.dc6cab21.png",
+    "static/media/donkeykong.jpg": "/react-game/static/media/donkeykong.ba001227.jpg",
+    "static/media/ghost.png": "/react-game/static/media/ghost.c7018560.png",
+    "static/media/kirby.png": "/react-game/static/media/kirby.c193d51b.png",
+    "static/media/link.png": "/react-game/static/media/link.edfdf681.png",
+    "static/media/luigi.png": "/react-game/static/media/luigi.8687d878.png",
+    "static/media/mario.png": "/react-game/static/media/mario.f8740a70.png",
+    "static/media/megaman.jpeg": "/react-game/static/media/megaman.0840b83c.jpeg",
+    "static/media/peach.png": "/react-game/static/media/peach.72346b72.png",
+    "static/media/pikachu.jpg": "/react-game/static/media/pikachu.6623e571.jpg",
+    "static/media/sonic.png": "/react-game/static/media/sonic.a89dbd4c.png"
+  }
+}
