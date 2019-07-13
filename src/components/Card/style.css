@@ -3,9 +3,13 @@
     border-radius: 10px;
     height: 150px;
     width: 150px;
+    margin: 0.25rem;
+    /* float: left; */
+    box-shadow: 2px 4px 22px 1px rgba(0, 0, 0, 0.25);
 }
 .cardstyle:hover {
-    border-color: rgb(0, 154, 226);
+    border-color: #11A4DD;
+    box-shadow: 2px 4px 22px 1px rgba(0, 0, 0, 0.7);
     transition: .5s all;
     transform: scale(1.2);
 }

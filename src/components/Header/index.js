@@ -3,10 +3,13 @@ import React from "react";
 
 // pass header into main app. Want to pass in props of current score.
 function Header() {
+  let style = {
+    boxShadow: '2px 4px 22px 1px rgba(0, 0, 0, 0.5)'
+  }
   return (
     // <div className="wrapper">{props.children}</div>
     <section className="hero is-medium is-info is-bold">
-      <div className="hero-body">
+      <div className="hero-body" style={style}>
         <div className="container">
           <h1 className="title">
             React Memory Game

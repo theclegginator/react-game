@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Card from './components/Card'
 import Header from './components/Header'
 import Scorecard from "./components/Scorecard";
+import Footer from "./components/Footer";
 
 const cards = [
   {
@@ -75,7 +76,6 @@ class App extends Component {
   state = {
     cards,
     score: 0,
-    // guesses: []
   };
 
   randomizeCards = (cards) => {
@@ -126,6 +126,7 @@ class App extends Component {
           />
           ))}
       </Wrapper>
+      <Footer />
       </div>
     );
   }

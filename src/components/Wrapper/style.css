@@ -9,3 +9,9 @@
   align-content: flex-start;
   overflow: auto;
 }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
