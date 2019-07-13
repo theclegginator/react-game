@@ -6,8 +6,8 @@ function Scorecard(props) {
   return (
     // <div className="wrapper">{props.children}</div>
     <section>
-      <div class="container">
-        <div class="column scorecard has-text-centered">
+      <div className="container">
+        <div className="column scorecard has-text-centered">
           <h1>Score: {props.score}</h1>
         </div>
       </div>

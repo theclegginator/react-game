@@ -5,13 +5,13 @@ import React from "react";
 function Header() {
   return (
     // <div className="wrapper">{props.children}</div>
-    <section class="hero is-medium is-info is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
+    <section className="hero is-medium is-info is-bold">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">
             React Memory Game
           </h1>
-          <h2 class="subtitle">
+          <h2 className="subtitle">
             Every click earns you points, but don't click an image more than once!
           </h2>
         </div>

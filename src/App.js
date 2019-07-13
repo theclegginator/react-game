@@ -4,7 +4,6 @@ import Wrapper from "./components/Wrapper";
 import Card from './components/Card'
 import Header from './components/Header'
 import Scorecard from "./components/Scorecard";
-// import cards from './cards.json'
 
 const cards = [
   {
@@ -71,19 +70,56 @@ const cards = [
 
 class App extends Component {
   // Setting this.state.cards equal to the array of cards in the JSON object
+  guesses = [];
+
   state = {
-    cards
+    cards,
+    score: 0,
+    // guesses: []
   };
+
+  randomizeCards = (cards) => {
+    // use the Durstenfeld Shuffle algo to shuffle the cards array into a new order
+    for (let i = cards.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let tempArray = cards[i];
+      cards[i] = cards[j];
+      cards[j] = tempArray;
+    }
+    // Now that we have shuffled all the cards around, set the state to trigger a re-render
+    this.setState({cards: cards});
+  }
+
+  checkGuess = (id) => {
+    // console.log(id)
+    // first, check to see if the id has already been guessed. If it has, the score will reset.
+    if (this.guesses.includes(id)) {
+      this.guesses=[]; // we also clear out the guesses array to reset the round.
+      this.setState({score: 0});
+    }
+    // if the guess had not already been guessed, we'll add it to the guesses array and increase the score.
+    else {
+      this.guesses.push(id);
+      this.setState({score: this.state.score + 1});
+    }
+    // regardless of the outcome, we will randomize the array again.
+    this.randomizeCards(cards);
+  }
+  
+
+  
   render() {
     return (
       <div>
       <Header /> 
       <Wrapper>
-        <Scorecard score={12}/>
+        <Scorecard score={this.state.score} />
       </Wrapper>
       <Wrapper>
         {this.state.cards.map(card => (
           <Card
+            checkGuess={this.checkGuess}
+            key={card.id}
             id={card.id}
             name={card.name}
             image={card.image}
